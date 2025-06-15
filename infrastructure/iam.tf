@@ -19,7 +19,7 @@ resource "aws_iam_role" "github_actions_role" {
         Action    = "sts:AssumeRoleWithWebIdentity"
         Condition = {
           StringLike = {
-            "token.actions.githubusercontent.com:sub" : "repo:YOUR_GITHUB_USERNAME/YOUR_REPO_NAME:*"
+            "token.actions.githubusercontent.com:sub" : "repo:joshuaking1/learnbridge-edu:*"
           }
         }
       }
